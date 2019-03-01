@@ -1,0 +1,55 @@
+.main-container{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.journal-preview-title{
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.journal-header{
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.journal-preview-body{
+    font-size: 15px;
+    line-height: 27px;
+    font-family: 'Karla', sans-serif; 
+}
+
+.read-time{
+    font-size: 11px;
+    color: rgb(107, 165, 162);
+    font-family: 'Exo', sans-serif;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+.entry-location{
+    background-color: rgba(245, 245, 245, 0.5) !important;
+}
+
+.entry-tags{
+    background-color: rgba(249, 249, 249, 0.99) !important;
+    float: left;
+}
+
+.no-entries{
+    display: inline;
+    text-align: center;
+}
+
+.side-menu{
+    width: 15%;
+    background-color: #f8f8f8;
+    height: 100%;
+}
+
+.side-menu-content{
+
+}

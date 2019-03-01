@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit | Journalize</title>
+    <link rel="stylesheet" href="{% static 'css/dropify.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/simplemde.min.css' %}">
+</head>
+<body>
+<div style="width: 95%; margin: auto;">
+    <form  enctype="multipart/form-data" method="post" novalidate>
+        {% csrf_token %}
+
+        {{ form }}
+
+        <input type="submit" class="btn" value="Save">
+    </form>
+</div>
+</body>
+</html>
+    <script src="{% static 'js/dropify.js' %}"></script>
+    <script src= "{% static 'js/simplemde.min.js' %}"></script>
+    <script>
+            $('.dropify').attr('data-default-file','\\' + 'media\\' + '{{object.image}}')
+        $('.dropify').dropify({
+            tpl: {
+                message: '<div class="dropify-message"><span class="file-icon" /> <p>Drag and drop or click to replace</p></div>',
+            }
+        });
+        var simplemde = new SimpleMDE();
+    </script>
+{% endblock %}

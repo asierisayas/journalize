@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static "css/auth.css" %}" >
+{% endblock head %}
+
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Journalize</title>
+</head>
+<body>
+    <form style="margin: auto;margin-top: 5%;" class="form col-md-3" method="post">
+        {% csrf_token %}
+        {{form}}
+        <br>
+        <input class="btn" type="submit" value="register">
+    </form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,8 @@
+.idea
+*.iml
+out
+gen
+.myenv
+db.sqlite3
+.collectstatic
+*.pyc
