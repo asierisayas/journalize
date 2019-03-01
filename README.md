@@ -8,9 +8,6 @@ Journalize is your own personal online journal. Take note of all the important (
 ### Clone repo
 Clone the repository to your local
 
-https://github.com/emmanuelobo/journalize.git
-
-
 ### Setup Virtual Env
 Create a python virtual environment either using virtualenv or pipenv (recommended)
 
